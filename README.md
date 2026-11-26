@@ -29,6 +29,8 @@
 ![Status](https://img.shields.io/badge/status-experimental-orange?style=for-the-badge)
 ![Bullshit](https://img.shields.io/badge/bullshit-not_welcome-red?style=for-the-badge)
 
+**English** · [Español](README.es.md)
+
 [The Skill](SKILL.md) · [Documentation](docs/) · [Report a fuck-up](https://github.com/flexiones/fuck-to-fix/issues)
 
 </div>
