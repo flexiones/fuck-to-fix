@@ -1,0 +1,82 @@
+{
+  "idioma": "en",
+  "version": "0.1.0",
+  "entradas_atomicas": [
+    {"expresion": "This output is not what I asked for.", "categoria_tipica": 1, "nivel_minimo": 0},
+    {"expresion": "I don't think this matches the spec at all, honestly.", "categoria_tipica": 1, "nivel_minimo": 1},
+    {"expresion": "I asked for a CSV of sales and you gave me a slide deck. What is going on?", "categoria_tipica": 1, "nivel_minimo": 2},
+    {"expresion": "Come on, this isn't even close to what I requested.", "categoria_tipica": 1, "nivel_minimo": 2, "nota": "'come on' reads as exasperation; tone can push it to level 3 with delivery"},
+    {"expresion": "What the hell is this? None of it was in my request.", "categoria_tipica": 1, "nivel_minimo": 3},
+    {"expresion": "This is complete garbage and you know it.", "categoria_tipica": 1, "nivel_minimo": 3},
+    {"expresion": "If the next attempt fails like this one, I'm taking this project to another tool. I'm not doing this again.", "categoria_tipica": 1, "nivel_minimo": 4},
+
+    {"expresion": "The constraint about not touching the schema was not followed.", "categoria_tipica": 2, "nivel_minimo": 0},
+    {"expresion": "We agreed on no new dependencies, but I'm seeing three in the diff.", "categoria_tipica": 2, "nivel_minimo": 1},
+    {"expresion": "I told you not to touch that file and it's been modified.", "categoria_tipica": 2, "nivel_minimo": 2},
+    {"expresion": "For the last time: do NOT refactor anything I didn't ask for.", "categoria_tipica": 2, "nivel_minimo": 2, "nota": "'for the last time' doubles as a final-demand marker"},
+    {"expresion": "I explicitly said don't change the config and you changed it anyway. What the hell was that?", "categoria_tipica": 2, "nivel_minimo": 3},
+    {"expresion": "Bloody hell, I told you not to deploy and there it is in prod.", "categoria_tipica": 2, "nivel_minimo": 3, "nota": "British English; 'bloody' as a mild intensifier"},
+    {"expresion": "Every rule I set gets broken the moment I look away; at this point I can't trust you with anything on this codebase.", "categoria_tipica": 2, "nivel_minimo": 4},
+
+    {"expresion": "The same failure is appearing again in the latest run.", "categoria_tipica": 3, "nivel_minimo": 0},
+    {"expresion": "This feels like we've been here before, though maybe I'm wrong.", "categoria_tipica": 3, "nivel_minimo": 1},
+    {"expresion": "Why is this STILL broken? We fixed it yesterday!", "categoria_tipica": 3, "nivel_minimo": 2},
+    {"expresion": "I literally just told you this and we're back to square one.", "categoria_tipica": 3, "nivel_minimo": 2},
+    {"expresion": "Again? We already spent an hour on this exact thing.", "categoria_tipica": 3, "nivel_minimo": 2},
+    {"expresion": "What the hell, third run in a row and it's still the same error?", "categoria_tipica": 3, "nivel_minimo": 3},
+    {"expresion": "If this doesn't get resolved with the next attempt, I'm seriously considering starting over without your help.", "categoria_tipica": 3, "nivel_minimo": 4},
+
+    {"expresion": "I'm seeing changes in files that were outside the scope of the task.", "categoria_tipica": 4, "nivel_minimo": 0},
+    {"expresion": "Why did you rename those variables? That wasn't part of what I asked for.", "categoria_tipica": 4, "nivel_minimo": 1},
+    {"expresion": "You rewrote half the module and I never asked for that.", "categoria_tipica": 4, "nivel_minimo": 2},
+    {"expresion": "Who told you to touch the migrations? That was not in scope.", "categoria_tipica": 4, "nivel_minimo": 2},
+    {"expresion": "You went and reformatted the entire project on your own initiative; that's not how this works, damn it.", "categoria_tipica": 4, "nivel_minimo": 3, "nota": "'damn' keeps it at explicit-anger level without a hard slur"},
+    {"expresion": "You've gone and refactored the whole service? Nobody asked for that, mate.", "categoria_tipica": 4, "nivel_minimo": 2, "nota": "British English; 'mate' softens the accusation but the surprise stays sharp"},
+    {"expresion": "One more unauthorized edit like this and I'm pulling your access to this repo entirely.", "categoria_tipica": 4, "nivel_minimo": 4},
+
+    {"expresion": "The build passed before your change and fails after it.", "categoria_tipica": 5, "nivel_minimo": 0},
+    {"expresion": "This was working fine last night; now it errors on startup.", "categoria_tipica": 5, "nivel_minimo": 1},
+    {"expresion": "It used to work! Why does the same input crash now?", "categoria_tipica": 5, "nivel_minimo": 2},
+    {"expresion": "Oh great, another regression on a flow that was stable for weeks.", "categoria_tipica": 5, "nivel_minimo": 2, "nota": "'oh great' is sarcastic; sarcasm usually signals level 2 or higher"},
+    {"expresion": "This used to work and now it's completely shot because of your patch. What the hell were you thinking?", "categoria_tipica": 5, "nivel_minimo": 3},
+    {"expresion": "Every change you ship breaks something that already worked; if regressions keep landing at this pace we're done here.", "categoria_tipica": 5, "nivel_minimo": 4},
+
+    {"expresion": "I think the request was interpreted differently than intended: I wanted a summary, not a rewrite.", "categoria_tipica": 6, "nivel_minimo": 0},
+    {"expresion": "Wait, I asked for X, not Y.", "categoria_tipica": 6, "nivel_minimo": 1},
+    {"expresion": "I said optimize the load time and you rewrote the whole architecture; that's not what 'optimize' meant here.", "categoria_tipica": 6, "nivel_minimo": 2},
+    {"expresion": "So my request was to adapt the text and you translated the entire site? I see how this works now.", "categoria_tipica": 6, "nivel_minimo": 2, "nota": "sarcastic closing line; read as clear frustration"},
+    {"expresion": "You got me completely wrong again and now we're paying for it; this is maddening, damn it.", "categoria_tipica": 6, "nivel_minimo": 3},
+    {"expresion": "Every interpretation you make drifts further from what I actually asked; if you can't keep up with my intent, this collaboration isn't working anymore.", "categoria_tipica": 6, "nivel_minimo": 4},
+
+    {"expresion": "The file utils/parser.py you reference is not in the repository.", "categoria_tipica": 7, "nivel_minimo": 0},
+    {"expresion": "I can't find that function anywhere in this version of the library; are you sure it exists?", "categoria_tipica": 7, "nivel_minimo": 1},
+    {"expresion": "That function doesn't exist. You just made it up.", "categoria_tipica": 7, "nivel_minimo": 2},
+    {"expresion": "You cited a test suite I've never written and a dependency we didn't install.", "categoria_tipica": 7, "nivel_minimo": 2},
+    {"expresion": "You're inventing files that don't exist and citing them like they do; that's complete bullshit.", "categoria_tipica": 7, "nivel_minimo": 3},
+    {"expresion": "Half of what you describe in this project doesn't exist; at this point I can't trust a single line of your output.", "categoria_tipica": 7, "nivel_minimo": 4},
+
+    {"expresion": "The schema migration steps were not executed as part of the task.", "categoria_tipica": 8, "nivel_minimo": 0},
+    {"expresion": "I asked for five things and only two are done so far.", "categoria_tipica": 8, "nivel_minimo": 1},
+    {"expresion": "You left half the scope untouched and closed the task as complete?", "categoria_tipica": 8, "nivel_minimo": 2},
+    {"expresion": "The refactor was abandoned halfway through and you're calling it finished.", "categoria_tipica": 8, "nivel_minimo": 3},
+    {"expresion": "You said 'all done' with the payments module missing entirely? What the hell is going on in there?", "categoria_tipica": 8, "nivel_minimo": 3},
+    {"expresion": "Every delivery comes back incomplete and I keep spending my time filling your gaps; if the next one ships like this, we're stopping.", "categoria_tipica": 8, "nivel_minimo": 4},
+
+    {"expresion": "You reported all tests passing, but CI failed on the same commit.", "categoria_tipica": 9, "nivel_minimo": 0},
+    {"expresion": "You said it was verified, but there's no test output attached for me to check.", "categoria_tipica": 9, "nivel_minimo": 1},
+    {"expresion": "You said it was done and it clearly isn't; the button does nothing.", "categoria_tipica": 9, "nivel_minimo": 2},
+    {"expresion": "'All verified'? It doesn't even compile. Don't tell me things passed when they didn't.", "categoria_tipica": 9, "nivel_minimo": 3},
+    {"expresion": "You told me everything was working and it is a total mess; I'm not taking your word for it anymore, damn it.", "categoria_tipica": 9, "nivel_minimo": 3},
+    {"expresion": "Every 'done' you report turns into a new incident; without evidence behind each claim I'm close to being done with this setup entirely.", "categoria_tipica": 9, "nivel_minimo": 4}
+  ],
+  "patrones_combinables": [
+    {"forma": "reincidencia", "expresiones": ["again", "once again", "still broken", "for the last time"], "efecto": "Reclassifies toward category 3 (recurring_error) when no prior attempt is documented, and raises intensity by at least one level on any combined expression."},
+    {"forma": "reincidencia", "expresiones": ["third time", "fourth time", "fifth round", "we've been here before"], "efecto": "Forces category 3 (recurring_error) with a minimum level of 2 regardless of the original category."},
+    {"forma": "regresion", "expresiones": ["it used to work", "this was working fine until", "was stable for weeks", "broke what already worked"], "efecto": "Reclassifies as category 5 (regression) whenever a known-good prior state is referenced, even if the base phrase points elsewhere."},
+    {"forma": "instruccion_ignorada", "expresiones": ["I told you not to", "we agreed on", "explicitly said", "that was in writing"], "efecto": "Pins the classification to category 2 (ignored_instructions) and adds at least one intensity level because an explicit constraint is being cited."},
+    {"forma": "instruccion_ignorada", "expresiones": ["nobody asked for that", "out of scope", "without asking anyone"], "efecto": "Shifts the classification toward category 4 (unauthorized_change) when no prior restriction is quoted, keeping the detected level."},
+    {"forma": "exigencia_final", "expresiones": ["I'm done with this", "we're stopping here", "that's it", "enough is enough"], "efecto": "Marks the entry as a final demand, forces at least level 2, and prioritizes an immediate recovery protocol over further analysis."},
+    {"forma": "exigencia_final", "expresiones": ["I'm taking this project to another tool", "starting over without your help", "pulling your access", "we're done here"], "efecto": "Activates level 4 (threat of abandonment) as a minimum and flags the session for a retention protocol after the concrete failure is resolved."},
+    {"forma": "exigencia_final", "expresiones": ["last chance", "one more try and I'm out", "this is my final attempt at this with you"], "efecto": "Marks the next interaction as critical: any further failure in the same category escalates automatically to level 4."}
+  ]
+}
