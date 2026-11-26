@@ -51,6 +51,40 @@ Enhorabuena. Acabas de redactar una expresión de frustración perfectamente com
 
 Es una skill de código abierto diseñada para detectar la frustración dirigida a un agente de IA y convertirla en un procedimiento estructurado de recuperación utilizando el contexto disponible de la conversación.
 
+## El cabreo es información. No desperdicies la puta señal.
+
+La IA se equivoca. La corriges. Repite la cagada. Gastas tiempo, dinero y tokens intentando volver al punto de partida. Y acabas soltando tacos.
+
+La pregunta interesante no es si tu vocabulario es educado, sino si el agente es capaz de reconocer que su estrategia ha fracasado y hacer algo útil al respecto.
+
+**No castigues el síntoma. Diagnostica el fallo.**
+
+Esta es una propuesta de diseño para gestionar la frustración habitual durante una tarea, no una defensa del acoso, las amenazas ni la crueldad reiterada. La seguridad y la recuperación productiva son compatibles.
+
+### Por qué importa ahora — 26 de noviembre de 2026
+
+Los proveedores de IA ya disponen de mecanismos de advertencia, restricción y sanción. Pero cerrar una conversación, suspender temporalmente una cuenta y banearla definitivamente son cosas distintas.
+
+| Proveedor | Qué establecen sus políticas publicadas |
+|---|---|
+| OpenAI / ChatGPT | Contempla [advertencias, suspensiones y cierres de cuentas](https://help.openai.com/es-es/articles/10562188). Su [documentación sobre moderación](https://help.openai.com/es-es/articles/8940831) describe suspensiones temporales por seguridad, algunas de 24 o 48 horas relacionadas con violencia o protección de menores. No establece un baneo por el mero hecho de soltar tacos al bot. |
+| Anthropic / Claude | La [actualización de octubre de 2026](https://www.anthropic.com/news/2026-usage-policy-update), vigente desde el 12 de noviembre, prohíbe el abuso extremo, reiterado y sin finalidad hacia sus modelos, pero excluye expresamente la frustración habitual y las críticas. Su medida principal para esa regla es finalizar conversaciones abusivas. También contempla [advertencias y baneos](https://support.claude.com/en/articles/8241253-safeguards-warnings-and-appeals) por infracciones de sus políticas en general. |
+| Google / Gemini | Sus [normas de uso](https://support.google.com/gemini/answer/18481641) prohíben el acoso a personas reales y contemplan medidas graduales, desde advertencias hasta pérdida de acceso. Su [documentación de aplicación de políticas](https://support.google.com/gemini/answer/16625148) describe restricciones por infracciones reiteradas. No establece un baneo temporal específico por el mero hecho de insultar a Gemini. |
+
+También hay un argumento de productividad. [The Register, 12 de noviembre de 2026](https://www.theregister.com/ai-and-ml/2026/11/12/a-third-of-us-ai-chatters-are-hot-at-bots-hurling-insults-at-llms/5309506), publicó los resultados de un análisis observacional de Searchable: las quejas se resolvían en la respuesta siguiente en un 24 % de los casos con insultos, frente al 35 % sin ellos. Es una asociación, no una prueba de causalidad ni una demostración de que FUCK-TO-FIX mejore esas cifras.
+
+### ¿Y qué proponemos nosotros?
+
+```text
+ CABREO -> CONTEXTO -> DIAGNOSTICO -> CORRECCION -> EVIDENCIAS
+               |
+               +-- Falta contexto? Haz una pregunta util.
+```
+
+FUCK-TO-FIX interpreta la frustración ante una tarea fallida como una posible señal de diagnóstico. Recupera la intención y las restricciones originales, cambia las estrategias fallidas y exige evidencias en lugar de otra disculpa de mierda.
+
+**Esto no es una herramienta antibaneo.** No puede impedir la moderación, revertir suspensiones, anular las políticas del proveedor ni garantizar el acceso. No sirve para maquillar peticiones prohibidas ni eludir sistemas de seguridad. La skill actual trabaja dentro del contexto y los permisos disponibles en el anfitrión; la moderación puede actuar antes de que se ejecute. Defendemos la recuperación constructiva cuando proceda, no la inmunidad frente a las sanciones.
+
 ## El bucle de la puta mierda
 
 ```text
